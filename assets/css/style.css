@@ -1,0 +1,69 @@
+
+/*reset css nhúng font*/
+* {
+    box-sizing: inherit;
+    /* ke thua tu the html co thuoc tinh boderbox*/
+}
+
+html {
+    font-size: 62.5%;
+    /* = 1rem */
+    line-height: 1.6rem;
+    /*= 16px */
+    font-family: 'Roboto', sans-serif;
+    /* chon font , nhung font roboto */
+    box-sizing: border-box;
+    /* set up chinh kich thuoc element trong box */
+}
+
+p {
+    font-size: 1rem;
+    line-height: 16px;
+}
+
+.list-menu > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+.list-menu > li{
+    list-style: none;
+}
+
+.box50{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height:30px ;
+    display: inline-block;
+    z-index: 1;
+}
+.box50 > i{
+    font-size: 18px;
+}
+/*breakpoint mobile*/
+@media (max-width: 540px) {
+    .logo{
+        display:none;
+    }
+
+         .mbatl {
+             display: flex;
+             flex-direction: row-reverse;
+         }
+   
+
+   
+
+}
+/*breakpoint tablet*/
+@media (min-width: 540px) and (max-width:1140px) {
+  .mbatl{
+    display: flex;
+        flex-direction: row-reverse;
+  }
+   .logo {
+       display: none;
+   }
+
+}
